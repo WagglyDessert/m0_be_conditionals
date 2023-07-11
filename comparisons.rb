@@ -17,31 +17,31 @@ number_students = 20
 string_teachers = "4"
 numberDogs = 0
 
-# EXAMPLE: print the result of the comparison: is number_seachers greater than number_students?
+# EXAMPLE: print the result of the comparison: is number_teachers greater than number_students?
 puts "Is number_teachers greater than number_students?", number_teachers > number_students
 # this should print: "Is numberTeachers greater than numberStudents?" false
 
 # YOU DO: print the result of the comparison: is number_teachers less than number_students?
 # this should print: true
-
+puts "is number_teachers less than number_students?" , number_teachers < number_students
 # YOU DO: print the result of the comparison: is number_teachers equal to string_teachers?
 # this should print: false
-
+puts "is number_teachers equal to string_teachers?" , number_teachers == string_teachers
 # YOU DO: print the result of the comparison: is number_teachers not equal to number_students?
 # this should print: true
-
+puts "is number_teachers not equal to number_students?" , number_teachers != number_students
 # YOU DO: print the result of the comparison: is number_students greater than or equal to 20?
 # this should print: true
-
+puts "is number_students greater than or equal to 20?" , number_students >= 20
 # YOU DO: print the result of the comparison: is number_students greater than or equal to 21?
 # this should print: false
-
+puts "is number_students greater than or equal to 21?" , number_students >= 21
 # YOU DO: print the result of the comparison: is number_students less than or equal to 20?
 # this should print: true
-
+puts "is number_students less than or equal to 20?" , number_students <= 20
 # YOU DO: print the result of the comparison: is number_students less than or equal to 21?
 # this should print: true
-
+puts "is number_students less than or equal to 21?" , number_students <= 21
 
 #-------------------
 # PART 2: Articulating what you are doing
@@ -53,21 +53,21 @@ puts "Is number_teachers greater than number_students?", number_teachers > numbe
 # Make sure YOU can explain it that way!
 
 puts 4 < 9
-#YOU DO: Explain.
+#YOU DO: Explain. The code is examining whether 4 is less than 9. 4 IS less than 9, so the condition is TRUE.
 
 books = 3
 puts 4 < books
-# YOU DO: Explain.
+# YOU DO: Explain. The code is comparing whether the number of books is greater than 4. The number of books is 3. The condition is FALSE.
 
 friends = 6
 siblings = 2
 puts friends > siblings
-# YOU DO: Explain.
+# YOU DO: Explain. The code is comparing whether the number of friends is greater than the number of siblings. There are six friends, and two siblings. Therefore there are more friends than siblings, so the condition is TRUE.
 
 attendees = 9
 meals = 8
 puts attendees != meals
-# YOU DO: Explain.
+# YOU DO: Explain. The code is comparing if the number of attendees does not equal the number of meals. There are nine attendees and eight meals. They are not equal, so the condition is TRUE.
 
 
 #-------------------
@@ -90,15 +90,15 @@ age = 1
 
 # YOU DO:
 # Determine if the dog loves to play and loves treats
-
+puts "if the dog loves to play and loves treats" , loves_to_play && loves_treats
 
 # Determine if the dog loves to play and loves the dog park
-
+puts "if the dog loves to play and loves the dog park" , loves_to_play && loves_dog_park
 
 # Determine if the dog loves to play or loves the dog park
-
+puts "if the dog loves to play or loves the dog park" , loves_to_play || loves_dog_park
 
 # Determine if the dog loves to play and is a puppy
-
+puts "if the dog loves to play and is a puppy" , loves_to_play && age < 1
 # What did your final line of code evaluate to? Why do you think that is? Explain.
-# ANSWER:
+# ANSWER: the final line of code, "Determine if the dog loves to play and is a puppy" evaluated to false because I set the puppy parameter to a dog less than one year old. Because the dog is equal to one but not less than one, the dog is not a puppy. In addition, this is an "and" operator so the dog would need to love to play AND be a puppy in order for the condition to be true.
